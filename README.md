@@ -132,7 +132,7 @@ Although OpenAPI specs offer great descriptions of how to use APIs, code-gen wit
 <details>
 <summary>How is this different than the Model Context Protocol?</summary>
 
-While MCP is designed to be stateful—relying on persistent connections between clients and servers for exchanging context and requests—Agents.json is stateless. Here, the agent independently manages all context. You can leverage your existing agent architecture and RAG systems to handle state effectively. Agents.json lets you build with existing pub/sub architectures, server-less environments, and infrastructure APIs already support today. And definitions are strongly typed by OpenAPI specs.
+There is no significant difference -- MCP can be stateful and stateless, and has been adopted already by the major IDEs and plugins and is fast becoming the protocol of choice. A distinct advantage of MCP is that there is no need to include any JSON file or config -- MCPs can self-discover, adapt and even create new MCPs as they need to.
 
 </details>
 
